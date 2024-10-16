@@ -1,0 +1,62 @@
+version: "3"
+services:
+  server:
+    container_name: Bluecardinal-Server
+    restart: always
+    ports:
+      - "8181:8181"
+    image: bluecardinal:latest
+    mac_address: "02:42:ac:11:00:02"
+    volumes:
+      - ./AppData/deploy:/app/sigmastream/BlueCardinal/BlueCardinal-Server/deploy
+      - ./AppData/config:/app/sigmastream/BlueCardinal/BlueCardinal-Server/config
+      - ./AppData/logs:/app/sigmastream/BlueCardinal/BlueCardinal-Server/logs
+      - ./AppData/start-service.sh:/app/sigmastream/BlueCardinal/BlueCardinal-Server/start-service.sh
+      - ./AppData/lib:/app/sigmastream/BlueCardinal/BlueCardinal-Server/lib
+      - ./AppData/validConfig:/app/sigmastream/BlueCardinal/BlueCardinal-Server/validConfig
+      - ./AppData/invalidConfig:/app/sigmastream/BlueCardinal/BlueCardinal-Server/invalidConfig
+      - ./AppData/bluecardinal-core.jar:/app/sigmastream/BlueCardinal/BlueCardinal-Server/bluecardinal-core.jar
+      - ./AppData/yguard-1.1.0.log.xml:/app/sigmastream/BlueCardinal/BlueCardinal-Server/yguard-1.1.0.log.xml
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - sigmastream
+  db:
+    container_name: PostgreSQL
+    mem_limit: 2048m
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:      
+      - ./postgres/13/db.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./postgres/13/rtv.sql:/docker-entrypoint-initdb.d/rtv.sql  
+      - ./postgres/13/rtv.dump:/docker-entrypoint-initdb.d/rtv.dump    
+      - ./postgres/13/data:/var/lib/postgresql/data
+      #- ./postgres/13/init.sh:/docker-entrypoint-initdb.d/init.sh 
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 20s
+      timeout: 10s
+      start_period: 1m
+      retries: 5
+    networks:
+      - sigmastream
+  cassandra:
+    container_name: Cassandra
+    image: cassandra
+    mem_limit: 4048m
+    restart: always
+    ports:
+      - "9042:9042"
+    volumes:
+      - ./cassandra/data:/var/lib/cassandra
+    networks:
+      - sigmastream
+networks:
+  sigmastream:
+    driver: bridge

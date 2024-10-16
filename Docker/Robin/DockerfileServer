@@ -1,0 +1,6 @@
+FROM ubuntu
+COPY . /app/sigmastream/BlueCardinal/BlueCardinal-Server
+WORKDIR /app/sigmastream/BlueCardinal/BlueCardinal-Server
+CMD sh start-service.sh
+
+

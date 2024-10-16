@@ -1,0 +1,27 @@
+connection=wired
+network_interface=eth0
+ip_address=10.0.0.76
+default_gateway=10.0.0.75
+netmask=255.255.255.0
+dns_server=10.0.0.75
+network_interface=eth1
+ip_address=192.168.1.11
+default_gateway=192.168.1.1
+netmask=255.255.255.0
+dns_server=4.4.4.4 1.1.1.1
+browser=chrome
+allow_icmp_protocol=yes
+homepage=http://10.0.0.75/#/hblogin/eTrue/c3Mtc3VwcG9ydC9TISpnUVhiZVl6W3QkbSpeOzhvZD93ZWxsbmFtZT1EU1IwMDFfV2VsbDAwMSZwYXRoPWRpc3BsYXlkYXNoYm9hcmQvbWFpbi8xMDAwMDQ0LzYyZDc1NzdlLTUxNzctNDZjZC05NGY0LTdmZjlmMzE5Njc5MC9ITUktTmV3LURhc2hib2FyZCZ0b29sYmFyPWZhbHNlJnVvbXByb2ZpbGU9U0k=
+homepage_check=Waiting for connection with Banyan
+whitelist=10.0.0.75
+disable_firewall=yes
+disable_private_mode=no
+allow_popup_windows=yes
+disable_zoom_controls=yes
+disable_address_bar=yes
+disable_navigation_bar=yes
+virtual_keyboard=yes
+additional_components=08-ssh.xzm 09-x11vnc.xzm
+root_password=geheim
+vnc_password=geheim
+vnc_interactive=yes

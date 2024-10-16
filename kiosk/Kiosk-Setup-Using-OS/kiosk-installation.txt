@@ -1,0 +1,26 @@
+Workflow for installing Kiosk:
+
+On the HMI, add network cable to DHCP enabled router to the internet
+
+Download the Porteus Kiosk iso file from https://porteus-kiosk.org/download.html
+
+Install on USB stick with Etcher (can be downloaded from https://etcher.balena.io/)
+
+Insert USB stick in HMI
+
+Insert USB keyboard in HMI 
+
+Power cycle the HMI and press F12 to show bootloader. Start from USB stick.
+
+In Porteus wizard, choose Network installation and DHCP. 
+Next choose to install Chrome. 
+
+When the choice comes up, choose to install the configuration from a USB stick. 
+Copy the file kiosk_config.txt on a second USB stick and insert in HMI. 
+You must only insert the stick after choosing to install confuration from USB, otherwise
+the USB stick is not mounted.
+Choose the file and continue.
+
+Choose to install Porteus to the internal SSD
+
+Remove USB sticks and keyboard when HMI reboots

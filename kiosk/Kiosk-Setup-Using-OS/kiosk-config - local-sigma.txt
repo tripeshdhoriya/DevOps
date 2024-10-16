@@ -1,0 +1,17 @@
+connection=wired
+netmask=255.255.255.0
+ip_address=192.168.3.48
+network_interface=eth0
+dns_server=8.8.8.8 8.8.4.4
+default_gateway=192.168.3.1
+browser=chrome
+disable_firewall=yes
+homepage=https://192.168.2.26:8443/#/hblogin/eTrue/Z2F1dGFtL1MhKmdRWGJlWXpbdCRtKl47OG9kP3dlbGxuYW1lPUxpdmVfV2VsbCZwYXRoPWRpc3BsYXlkYXNoYm9hcmQvbWFpbi8xMDAwMjk0LzA0ZWMxMDRiLWE1MjUtNDg2Yy1iOGQxLWFiZTdjMDc0YTNhNy9MYXRlc3QgSE1JIERhc2hib2FyZCZ0b29sYmFyPWZhbHNlJnVvbXByb2ZpbGU9U0k=
+disable_private_mode=no
+allow_popup_windows=yes
+disable_zoom_controls=yes
+disable_address_bar=yes
+disable_navigation_bar=yes
+virtual_keyboard=yes
+shutdown_menu=lock reboot restart-session shutdown sleep
+additional_components=09-x11vnc.xzm uefi.zip

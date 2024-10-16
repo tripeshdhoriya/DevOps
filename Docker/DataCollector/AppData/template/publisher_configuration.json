@@ -1,0 +1,21 @@
+{
+  "remoteIP": "127.0.0.1",
+  "keepDataHistory": "True",
+  "publishMode": "natural",
+  "deviceId": "1",
+  "timeout": "300000",
+  "timeStampChannelMN": "",
+  "payloadType": "CSVSPARSE",
+  "deviceDataType": "SIMULATED",
+  "isbackfillEnable": true,
+  "autoWsbackfillEnable": false,
+  "apikey": "eWVsbG93aGFtbWVyLnNpZ21hc3RyZWFt",
+  "reconnectInterval": "300000",
+  "timeStampChannelEnable": false,
+  "dataFlowMode": "async",
+  "schemes": "wss://",
+  "lastTs": "0",
+  "keystorePath": "",
+  "port": "7443",
+  "username": "yellowhammer"
+}

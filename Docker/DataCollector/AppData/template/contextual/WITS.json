@@ -1,0 +1,19 @@
+{
+  "configuration": {
+    "remoteIP": "192.168.2.103",
+    "port": "1024",
+    "reconnectInterval": "60000",
+    "configType": "Default",
+    "keepLiveInterval": "",
+    "nullValueStreamEnable": "True",
+    "autoChannelConfig": "True",
+    "customizeChannelConfig": "True",
+    "readTimeout": "10000",
+    "communicationType": "Ethernet"
+  },
+  "metadata": {
+    "data_type": "PROCESSED",
+    "dstEnable" : true,
+    "freq" : "100"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "configuration": {
+    "remoteIP": "192.168.2.103",
+    "port": "8055",
+    "reconnectTime": "60000",
+    "timeSyncInterval": "60000",
+    "secondaryPort": "",
+    "nullValueStreamEnable": "True",
+    "customizeChannelConfig": "False",
+    "readTimeout": "10000"
+  },
+  "metadata": {
+    "data_type" : "RAW",
+    "startTime" : "0",
+    "endTime" : "0",
+    "manufacturer" : "yh",
+    "model_number" : "1",
+    "serial_number" : "1",
+    "freq" : "100"
+
+  }
+}

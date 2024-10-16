@@ -1,0 +1,7 @@
+FROM ubuntu
+COPY . /app/sigmastream/yellowhammer/server
+COPY start-server.sh /app/sigmastream/yellowhammer/server/yellowhammer/yellowhammer-base 
+WORKDIR /app/sigmastream/yellowhammer/server/yellowhammer/yellowhammer-base
+CMD sh start-server.sh
+
+

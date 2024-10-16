@@ -1,0 +1,538 @@
+{
+  "configuration": {
+    "remoteIP": "127.0.0.1",
+    "port": "1502",
+    "protocol": "TCP",
+    "mode": "Master",
+    "clients": [
+      {
+        "slaveId": "1",
+        "timeout": "6000",
+        "retry": "3",
+        "baseValue": "0",
+        "reconnect": "6000",
+        "nullvalueEnable": "True",
+        "registers": [
+          {
+            "pollfreq": "",
+            "holding": [],
+            "input": [],
+            "coils": [],
+            "discrete": []
+          },
+          {
+            "pollfreq": "--",
+            "holding": [
+              {
+                "bitLength": "32",
+                "name": "4000001",
+                "description": "4000001",
+                "index": "400001",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "BLOCK",
+                "description": "BLOCK",
+                "index": "400005",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "HOOKLOAD",
+                "description": "HOOKLOAD",
+                "index": "400007",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "ROP",
+                "description": "ROP",
+                "index": "400009",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "SWOB",
+                "description": "SWOB",
+                "index": "400011",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "SPP",
+                "description": "SPP",
+                "index": "400013",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "DP",
+                "description": "DP",
+                "index": "400015",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "SRPM",
+                "description": "SRPM",
+                "index": "400017",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "STRQ",
+                "description": "STRQ",
+                "index": "400019",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "A",
+                "description": "BIT_DEPTH",
+                "index": "400021",
+                "type": "int",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "SS_ON",
+                "description": "SS_ON",
+                "index": "400041.01",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "SS_SETPOINT_ON",
+                "description": "SS_SETPOINT_ON",
+                "index": "400041.02",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "K",
+                "description": "RPM_SET_POINT",
+                "index": "400041",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "P",
+                "description": "Q",
+                "index": "400051",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "AUTODRILLER_MASTER_ENABLE",
+                "description": "AUTODRILLER_MASTER_ENABLE",
+                "index": "400041.03",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "AUTODRILLER_WOB_ON",
+                "description": "AUTODRILLER_WOB_ON",
+                "index": "400041.04",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "B",
+                "description": "HOLEDEPTH",
+                "index": "400023",
+                "type": "int",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "m"
+              },
+              {
+                "bitLength": "32",
+                "name": "C",
+                "description": "BLOCK",
+                "index": "400025",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "I",
+                "description": "SRPM",
+                "index": "400037",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "AUTODRILLER_WOB_ENABLE",
+                "description": "Autodriller WOB Enable Status",
+                "index": "400041.05",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "AUTODRILLER_TORQUE_ENABLE",
+                "description": "Autodriller Torque Enable Status",
+                "index": "400041.06",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "AUTODRILLER_DELTAP_ENABLE",
+                "description": "Autodriller DeltaP Enable Status",
+                "index": "400041.07",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "D",
+                "description": "HOOKLOAD",
+                "index": "400027",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "E",
+                "description": "ROP",
+                "index": "400029",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "F",
+                "description": "SWOB",
+                "index": "400031",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "G",
+                "description": "SPP",
+                "index": "400033",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "H",
+                "description": "DP",
+                "index": "400035",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "COP_TdRpm_P_SP",
+                "description": "COP P (Proportional) Setpoint for Topdrive Speed Control Loop",
+                "index": "400073",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "COP_TdRpm_I_SP",
+                "description": "COP I (Integral) Setpoint for Topdrive Speed Control Loop",
+                "index": "400075",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "COP_TdRpm_D_SP",
+                "description": "COP D (Derivative) Setpoint for Topdrive Speed Control Loop",
+                "index": "400077",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "COP_WOB_SP",
+                "description": "Surface WOB Setpoint from COP DEEP Engine",
+                "index": "400071",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "M",
+                "description": "N",
+                "index": "400045",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "COP_WOB_CTRL_ENABLE",
+                "description": "COP WOB Control Availible Status",
+                "index": "400045.01",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "J",
+                "description": "STRQ",
+                "index": "400039",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "L",
+                "description": "Test",
+                "index": "400043",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "N",
+                "description": "O",
+                "index": "400047",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "O",
+                "description": "P",
+                "index": "400049",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "Q",
+                "description": "Downhole WOB Setpoint [klb]",
+                "index": "400053",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "R",
+                "description": "X",
+                "index": "400055",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "S",
+                "description": "X1",
+                "index": "400057",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "T",
+                "description": "X2",
+                "index": "400059",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "U",
+                "description": "C",
+                "index": "400061.00",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "V",
+                "description": "B",
+                "index": "400061.01",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "W",
+                "description": "K",
+                "index": "400061.07",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "X",
+                "description": "A",
+                "index": "400063.00",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "Y",
+                "description": "SS_ON",
+                "index": "400063.01",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "EE",
+                "description": "Autodriller DeltaP Enable Status",
+                "index": "400063.07",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "AA",
+                "description": "AUTODRILLER_MASTER_ENABLE",
+                "index": "400063.03",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "BB",
+                "description": "AUTODRILLER_WOB_ON",
+                "index": "400063.04",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "CC",
+                "description": "Autodriller WOB Enable Status",
+                "index": "400063.05",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "DD",
+                "description": "Autodriller Torque Enable Status",
+                "index": "400063.06",
+                "type": "boolean",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              },
+              {
+                "bitLength": "32",
+                "name": "FF",
+                "description": "J",
+                "index": "400065",
+                "type": "int",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              }
+            ]
+          },
+          {
+            "pollfreq": "1",
+            "holding": [
+              {
+                "bitLength": "32",
+                "name": "HOLEDEPTH",
+                "description": "HOLEDEPTH1",
+                "index": "400003",
+                "type": "float",
+                "endiannes": "BIG_ENDIAN",
+                "uom": "UNITLESS"
+              }
+            ]
+          }
+        ],
+        "nullValue": "-999.25"
+      }
+    ],
+    "server": {
+      "listeningPort": "",
+      "maxRegIndex": "",
+      "baseIndex": "0",
+      "registers": [
+        {
+          "holding": [],
+          "input": [],
+          "coils": [],
+          "discrete": []
+        }
+      ]
+    },
+    "startIndex": "2020-07-29T23:05:30.059Z"
+  },
+  "metadata": {
+    "data_type": "RAW",
+    "startTime": "0",
+    "endTime": "0",
+    "manufacturer": "yh",
+    "model_number": "1",
+    "serial_number": "1",
+    "freq": "100"
+  }
+}

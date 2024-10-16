@@ -1,0 +1,80 @@
+version: "3.9"
+
+services:
+  webclient:
+    container_name: YellowHammer-Client
+    mem_limit: 512m
+    restart: always
+    networks:
+      - sigmastream
+    image: yh-webclient:latest
+    depends_on:
+      - server
+    volumes:
+      - ./AppData/webclient/config.properties:/app/sigmastream/yellowhammer/webclient/config/config.properties
+      - ./AppData:/app/sigmastream/yellowhammer/webclient/AppData/
+    ports:
+      - "8447:443"
+      - "8097:8097"
+
+  db:
+    container_name: PostgreSQL
+    mem_limit: 2048m
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/13/db.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./postgres/13/restore.sh:/docker-entrypoint-initdb.d/restore.sh  
+      - ./postgres/13/yh_dump.sql:/docker-entrypoint-initdb.d/yh_dump.sql 
+      - ./postgres/13/KFSeed.sql:/docker-entrypoint-initdb.d/KFSeed.sql      
+      - ./postgres/13/data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 20s
+      timeout: 10s
+      start_period: 1m
+      retries: 5
+    networks:
+      - sigmastream
+
+  server:
+    container_name: Central-YellowHammer-Server
+    mem_limit: 2048m
+    restart: always
+    ports:
+      - "8443:443"
+      - "8095:80"
+      - "4000:5000"
+    image: yh-server:latest
+    mac_address: 02:42:ac:12:00:07
+    depends_on:
+      - mongodb
+    networks:
+      - sigmastream
+    volumes:
+      - ./AppData:/app/sigmastream/yellowhammer/server/yellowhammer/yellowhammer-base/AppData
+      - ./AppData/start.ini:/app/sigmastream/yellowhammer/server/yellowhammer/yellowhammer-base/start.ini
+
+  mongodb:
+    container_name: MongoDB
+    mem_limit: 2048m
+    image: mongo:3.6
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - sigmastream
+    volumes:
+      - ./mongo/data:/data/db
+    ports:
+      - "20017:27017"
+      
+  
+networks:
+  sigmastream:
+    driver: bridge

@@ -1,0 +1,13 @@
+FROM ubuntu
+WORKDIR /app/sigmastream/yellowhammer/webclient
+COPY  webapp /app/sigmastream/yellowhammer/webclient/webapp
+COPY  i18n  /app/sigmastream/yellowhammer/webclient/i18n
+COPY  logger /app/sigmastream/yellowhammer/webclient/logger
+COPY  config /app/sigmastream/yellowhammer/webclient/config
+COPY  jre /app/sigmastream/yellowhammer/webclient/jre
+COPY  etc /app/sigmastream/yellowhammer/webclient/etc
+COPY  certs /app/sigmastream/yellowhammer/webclient/certs
+COPY  yh-webclient.jar /app/sigmastream/yellowhammer/webclient
+COPY start_server.sh /app/sigmastream/yellowhammer/webclient
+CMD sh start_server.sh
+

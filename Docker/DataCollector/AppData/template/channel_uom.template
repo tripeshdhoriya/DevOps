@@ -1,0 +1,230 @@
+{
+"channels": [{
+		"uom": "ft",
+		"mnemonics": ["Depth Bit (meas)", "[0108]Depth Bit (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Hole (meas)", "[0110]Depth Hole (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Block Position", "[0112]Block Position", "Block_Height(ft)"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["reaction_hookload", "Hookload", "Hookload (avg)", "[0114]Hookload (avg)"]
+	}, {
+		"uom": "gal[US]/min",
+		"mnemonics": ["Mud Flow In", "mud_flow_rate", "[0130]Mud Flow In (avg)"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["Top-of-String_speed", "Rotary Speed", "Rotary Speed (surf,avg)", "[0120]Rotary Speed (surf,avg)"]
+	}, {
+		"uom": "1000 lbf.ft",
+		"mnemonics": ["Topdrive_torque", "Rotary Torque", "Rotary Torque (surf,avg)", "[0118]Rotary Torque (surf,avg)", "Top_Drive_Torque(ft_lbf)"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["WOB", "Weight-on-Bit (surf,avg)", "[0116]Weight-on-Bit (surf,avg)"]
+	}, {
+		"uom": "psi",
+		"mnemonics": ["Standpipe Pressure (avg)", "[0121]Standpipe Pressure (avg)"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["AUTODRILLER_MASTER_ENABLE"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["SS_SETPOINT_ON"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["AUTODRILLER_WOB_ON"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_TdRpm_P_SP"]
+	}, {
+		"name": "PID_I",
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_TdRpm_I_SP"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_TdRpm_D_SP"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["DH_WOB_SetPoint"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["RPM_SET_POINT"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Svy/reading (meas)", "[0708]Depth Svy/reading (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Svy/reading (vert)", "TVD-WITS"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Hole (meas)", "[0711]Depth Hole (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Hole (vert)", "[0111]Depth Hole (vert)", "[0853]Depth Hole (vert)"]
+	}, {
+		"uom": "dega",
+		"mnemonics": ["Svy Inclination", "[0713]Svy Inclination"]
+	}, {
+		"uom": "dega",
+		"mnemonics": ["Svy Azimuth (corrected)", "[0715]Svy Azimuth (corrected)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Svy North-South Position", "[0718]Svy North-South Position"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Svy East-West Position", "[0719]Svy East-West Position"]
+	}, {
+		"uom": "0.01 dega/ft",
+		"mnemonics": ["Svy Dog Leg Severity", "[0720]Svy Dog Leg Severity"]
+	}, {
+		"uom": "ft/h",
+		"mnemonics": ["Rate of Penetration", "Rate of Penetration (avg)", "[0113]Rate of Penetration (avg)"]
+	}, {
+		"uom": "psi",
+		"mnemonics": ["P1_Pressure", "P1_Pressure (psi)"]
+	}, {
+		"uom": "lbf",
+		"mnemonics": ["P1_Tension", "P1_Tension (lb)", "P1_Tension  (lb)"]
+	}, {
+		"uom": "lbf.ft",
+		"mnemonics": ["P1_Torque", "P1_Torque (ft-lb)"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["X1_Acceleration X", "X1_Acceleration X (G)"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["X1_Acceleration Y", "X1_Acceleration Y (G)"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["X1_Acceleration Z", "X1_Acceleration Z (G)"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["X1_RPM"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["STRING_ROTATIONAL_VELOCITY", "StringRotationalVelocity"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["StringAccelerationAxialMeasured"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["StringAccelerationLateralXDerived"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["StringAccelerationLateralYDerived"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["StringAccelerationRadialMeasured"]
+	}, {
+		"uom": "gn",
+		"mnemonics": ["StringAccelerationTangentialMeasured"]
+	}, {
+		"uom": "1000 lbf.ft",
+		"mnemonics": ["StringTorque"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["StringWeight"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["AUTODRILLER_MODE"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_SS_CTRL_ENABLE"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["HP_MASTER_ENABLED"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_WOB_CTRL_ENABLE"]
+	}, {
+		"uom": "lbf.ft",
+		"mnemonics": ["acromag_topdrive_torque"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["acromag_rpm"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Bit (meas)", "[0108]Depth Bit (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Hole (meas)", "[0110]Depth Hole (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Block Position", "[0112]Block Position", "Block_Height(ft)"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["reaction_hookload", "Hookload", "Hookload (avg)", "[0114]Hookload (avg)"]
+	}, {
+		"uom": "gal[US]/min",
+		"mnemonics": ["Mud Flow In", "mud_flow_rate", "[0130]Mud Flow In (avg)"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["Top-of-String_speed", "Rotary Speed", "Rotary Speed (surf,avg)", "[0120]Rotary Speed (surf,avg)"]
+	}, {
+		"uom": "1000 lbf.ft",
+		"mnemonics": ["Topdrive_torque", "Rotary Torque", "Rotary Torque (surf,avg)", "[0118]Rotary Torque (surf,avg)", "Top_Drive_Torque(ft_lbf)"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["WOB", "Weight-on-Bit (surf,avg)", "[0116]Weight-on-Bit (surf,avg)"]
+	}, {
+		"uom": "psi",
+		"mnemonics": ["Standpipe Pressure (avg)", "[0121]Standpipe Pressure (avg)"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["HP_MASTER_ENABLED"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_SS_CTRL_ENABLE"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_WOB_CTRL_ENABLE"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_TdRpm_P_SP"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_TdRpm_I_SP"]
+	}, {
+		"uom": "UNITLESS",
+		"mnemonics": ["COP_TdRpm_D_SP"]
+	}, {
+		"uom": "klbf",
+		"mnemonics": ["DH_WOB_SetPoint"]
+	}, {
+		"uom": "rpm",
+		"mnemonics": ["RPM_SET_POINT"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Svy/reading (meas)", "[0708]Depth Svy/reading (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Svy/reading (vert)", "TVD-WITS"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Hole (meas)", "[0711]Depth Hole (meas)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Depth Hole (vert)", "[0111]Depth Hole (vert)", "[0853]Depth Hole (vert)"]
+	}, {
+		"uom": "dega",
+		"mnemonics": ["Svy Inclination", "[0713]Svy Inclination"]
+	}, {
+		"uom": "dega",
+		"mnemonics": ["Svy Azimuth (corrected)", "[0715]Svy Azimuth (corrected)"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Svy North-South Position", "[0718]Svy North-South Position"]
+	}, {
+		"uom": "ft",
+		"mnemonics": ["Svy East-West Position", "[0719]Svy East-West Position"]
+	}, {
+		"uom": "0.01 dega/ft",
+		"mnemonics": ["Svy Dog Leg Severity", "[0720]Svy Dog Leg Severity"]
+	}, {
+		"uom": "ft/h",
+		"mnemonics": ["Rate of Penetration", "Rate of Penetration (avg)", "[0113]Rate of Penetration (avg)"]
+	}
+	]
+}

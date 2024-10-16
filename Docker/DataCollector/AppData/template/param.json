@@ -1,0 +1,1064 @@
+{
+  "inputParams": [
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idwell",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecparent",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrec",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "bhaanpres",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "bhtemp",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "bitrevscalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "bitrevsnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "bitrevscumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "bitrevscumnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "daysfromspudcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthdrilledcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthdrillednoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthdrilledcumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthdrilledcumnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthend",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthendnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthstart",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthstartnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthtvdendcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "depthtvdstartcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "dragdowncalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "dragupcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "dttmend",
+      "dataType": "DATE",
+      "dataLength": 7,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "dttmstart",
+      "dataType": "DATE",
+      "dataLength": 7,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "durationnoprobtimecumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "durationproblemtimecumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "durationtimelogcumspudcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "durationtimelogtotcumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "ecdendoverride",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "excludefromnewhole",
+      "dataType": "NUMBER",
+      "dataLength": 22,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "formationcalc",
+      "dataType": "VARCHAR2",
+      "dataLength": 1020,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "gasinjrate",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "gasreturnrate",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "hookloadoffbottom",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "hookloadpickup",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "hookloadrotating",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "hookloadslackoff",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecjobprogramphasecalc",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecjobprogramphasecalctk",
+      "dataType": "VARCHAR2",
+      "dataLength": 104,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "rigcrewnamecalc",
+      "dataType": "VARCHAR2",
+      "dataLength": 200,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecotherinholecalc",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecotherinholecalctk",
+      "dataType": "VARCHAR2",
+      "dataLength": 104,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecwellbore",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "idrecwellboretk",
+      "dataType": "VARCHAR2",
+      "dataLength": 104,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "inclendcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "inclmaxcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "inclstartcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "injtemp",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "liquidinjrate",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "liquidinjrateriser",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "liquidreturnrate",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "note",
+      "dataType": "VARCHAR2",
+      "dataLength": 1020,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "outofrangecalc",
+      "dataType": "VARCHAR2",
+      "dataLength": 4000,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "refnostand",
+      "dataType": "VARCHAR2",
+      "dataLength": 40,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "reportdaycalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "reportnocalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "ropcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "ropnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "ropcumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "ropcumnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "ropinst",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "rpmmotor",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "rpmstring",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "rpmtotalcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "rpmtotalnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "sppdiff",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "sppdrill",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "surfannpres",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "surfanntemp",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "szodvgstab",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tfo",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tforef",
+      "dataType": "VARCHAR2",
+      "dataLength": 40,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmcirc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmcirccumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmdrill",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmdrillcumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmdrillcumnoexccalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmother",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmothercumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmtrip",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmtripcumcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmrotatingcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "tmslidingcalc",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "torquedrill",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "torqueoffbtm",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "torqueunits",
+      "dataType": "VARCHAR2",
+      "dataLength": 40,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "typ1",
+      "dataType": "VARCHAR2",
+      "dataLength": 400,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "typ2",
+      "dataType": "VARCHAR2",
+      "dataLength": 400,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "wob",
+      "dataType": "FLOAT",
+      "dataLength": 22,
+      "dataPrecision": 126,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syslockmeui",
+      "dataType": "NUMBER",
+      "dataLength": 22,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syslockchildrenui",
+      "dataType": "NUMBER",
+      "dataLength": 22,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syslockme",
+      "dataType": "NUMBER",
+      "dataLength": 22,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syslockchildren",
+      "dataType": "NUMBER",
+      "dataLength": 22,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syslockdate",
+      "dataType": "DATE",
+      "dataLength": 7,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "sysmoddate",
+      "dataType": "DATE",
+      "dataLength": 7,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "sysmoduser",
+      "dataType": "VARCHAR2",
+      "dataLength": 200,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syscreatedate",
+      "dataType": "DATE",
+      "dataLength": 7,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "syscreateuser",
+      "dataType": "VARCHAR2",
+      "dataLength": 200,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "form",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "systag",
+      "dataType": "VARCHAR2",
+      "dataLength": 1020,
+      "dataPrecision": 1,
+      "isMandatory": false,
+      "dataScale": 0
+    },
+    {
+      "paramType": "query",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "BU",
+      "dataType": "VARCHAR2",
+      "dataLength": 1020,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "query",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "Profile",
+      "dataType": "VARCHAR2",
+      "dataLength": 1020,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "query",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "UnitSet",
+      "dataType": "VARCHAR2",
+      "dataLength": 1020,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "header",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "Ocp-Apim-Subscription-Key",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "header",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "Host",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "BD",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "BD",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    },
+    {
+      "paramType": "HD",
+      "tableName": "wvJobDrillStringDrillParam",
+      "paramName": "HD",
+      "dataType": "VARCHAR2",
+      "dataLength": 128,
+      "dataPrecision": 1,
+      "isMandatory": true,
+      "dataScale": 0
+    }
+  ]
+}

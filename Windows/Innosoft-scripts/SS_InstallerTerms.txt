@@ -1,0 +1,30 @@
+SigmaStream
+End User License Agreement (EULA)
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT ("LICENSE") CAREFULLY BEFORE USING it. BY USING THE SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSE. IF YOU ARE ACCESSING THE SOFTWARE ELECTRONICALLY, SIGNIFY YOUR AGREEMENT TO BE BOUND BY THE TERMS OF THIS LICENSE BY CLICKING THE "AGREE/ACCEPT" BUTTON. IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENSE, DO NOT USE THE SOFTWARE AND (IF APPLICABLE) RETURN THE SOFTWARE TO THE PLACE WHERE YOU OBTAINED IT FOR A REFUND OR, IF THE SOFTWARE WAS ACCESSED ELECTRONICALLY, CLICK "DISAGREE/DECLINE".
+NOTE: IF YOU DO NOT HAVE A VALID LICENSE FOR THE SOFTWARE, YOU ARE NOT AUTHORIZED TO INSTALL, COPY OR OTHERWISE USE THE SOFTWARE EXCEPT AS NECESSARY FOR YOUR TRIAL PERIOD. 
+1. Intellectual Property Rights 
+This software product (a.k.a. the "Software") and the accompanying written materials are copyrighted and are proprietary products of SigmaStream.  All copyright, trademarks, design rights, patents and other intellectual property rights (registered and unregistered) in SigmaStream products belong to the SigmaStream. The SigmaStream reserves all of its rights.  Nothing in the Terms grants the users a right or license to use any trade mark, design right or copyright owned or controlled by the SigmaStream.
+The Software is also protected by United States Copyright Law and international Treaty provisions.  Trademarks shall be used in accordance with accepted trademark practice, including identification of trademark owner's name. Trademarks can only be used to identify printed output produced by the Software. Such use of any trademark does not give you any rights of ownership in it. Except the situations as stated above, this Agreement does not grant you any intellectual property rights in the Software. 
+2. General License Usage and Restrictions 
+This License allows you to install and use the software as per the underlying contract. 
+3. Transfer
+You may not rent, lease, lend, redistribute or sublicense or transfer the Software except for the terms & conditions of the underlying contract.   
+4. Termination
+This License is effective until terminated. Your rights under this License will terminate automatically without notice from SigmaStream if you fail to comply with any term(s) of this License. Upon the termination of this License, you shall cease all use of the Software and remove all copies, full or partial, of the Software.
+
+5. Disclaimer of Warranties 
+YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE SOFTWARE IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. EXCEPT FOR THE LIMITED WARRANTY ON MEDIA SET FORTH ABOVE AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED "AS IS", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND SIGMASTREAM HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE SOFTWARE, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. SIGMASTREAM DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR USE OF THE SOFTWARE, THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY SIGMASTREAM OR A SIGMASTREAM AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU. 
+
+6. Limitation of Liability 
+TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL SIGMASTREAM BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF SIGMASTREAM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. The foregoing limitations will apply even if the above stated remedy fails of its essential purpose. 
+
+7. Miscellaneous: 
+A. If you acquired the software in United States, this EULA (End User License Agreement) is governed by the laws of the United States. If this product was acquired outside United States, then local laws may apply. 
+
+B. SigmaStream does not allow you to utilize the Software to do anything that violates the local law. If you utilize the Software to do the illegal activity, the consequent result shall be on your own responsibility. If you disagree with this item, please don't install or use the Software.
+
+C. If any provision of this Agreement shall be unlawful, void, or for any reason unenforceable, then the provision of this Agreement shall continue in full force and effect and such severance shall not affect the validity and enforceability of the remaining provisions. This Agreement is the complete statement of the agreement and supersedes any proposal or prior communications between us relating to the subject matter of this Agreement.
+
+D. LANGUAGE - The original English version of the terms may have been translated into other languages. 
+
+E. If you have any questions regarding this Agreement, please contact info@sigmastream.com

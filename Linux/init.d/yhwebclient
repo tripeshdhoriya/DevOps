@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+# chkconfig: 2345 20 80
+# description: YellowHammer-WebClient
+
+# Source function library.
+. /etc/init.d/functions
+SS_USER=sigmastream
+YH_HOME=/apps/yhwebclient
+JAVA_HOME=${YH_HOME}/jre/bin/java
+YH_WEBCLIENT_HOME=${YH_HOME}
+YH_WEBCLIENT_STARTUP_LOG=${YH_WEBCLIENT_HOME}/logs/start.log
+JAVA_TMP_DIR="-Djava.io.tmpdir=${YH_WEBCLIENT_HOME}/temp/"
+
+REMOTE_DEBUG_ENABLE=false
+REMOTE_DEBUG_ARGS=("-Xdebug -Xrunjdwp:transport=dt_socket,address=8526,server=y,suspend=n")
+
+REMOTE_JMX_ENABLE=false
+SERVER_HOST_NAME=CENTOS-DEMO-YHWEBCLIENT-1
+REMOTE_JMX_ARGS=("-Djava.rmi.server.hostname=${SERVER_HOST_NAME} -Dcom.sun.management.jmxremote.port=10010 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false")
+
+JAVA_OPTIONS=(${JAVA_OPTIONS[*]} "-Xms1024m -Xmx1024m -XX:MetaspaceSize=32m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled  -XX:+UseCMSInitiatingOccupancyOnly -XX:+ScavengeBeforeFullGC -XX:+CMSScavengeBeforeRemark -XX:+DisableExplicitGC -verbose:gc -Xloggc:${YH_WEBCLIENT_HOME}/logs/gc-%t.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=2 -XX:GCLogFileSize=50M -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -XX:+PrintCommandLineFlags -XX:+PrintReferenceGC -XX:+PrintAdaptiveSizePolicy -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=${YH_WEBCLIENT_HOME}/heapdump/yh-webclient.hprof")
+
+if [ "$REMOTE_DEBUG_ENABLE" = true ]; then
+  JAVA_OPTIONS="${REMOTE_DEBUG_ARGS} ${JAVA_OPTIONS}"
+fi
+
+if [ "$REMOTE_JMX_ENABLE" = true ]; then
+  JAVA_OPTIONS="${JAVA_OPTIONS} ${REMOTE_JMX_ARGS}"
+fi
+
+YHWEBCLIENT_ARGS="basePath=${YH_WEBCLIENT_HOME}/"
+
+getyhwebclientstatus() {
+    YHWEBCLIENTSTATUSSTRING=$(ps ax | grep ${YH_HOME} | grep -v grep)
+    echo $YHWEBCLIENTSTATUSSTRING | grep -q ${YH_HOME}
+    YHWEBCLIENTSTATUS=$?
+}
+
+case "$1" in
+start)
+   getyhwebclientstatus
+   if [ $YHWEBCLIENTSTATUS -eq 0 ] ; then
+      echo "YellowHammer-WebClient is already running"
+      exit 0
+   fi
+   if [ -n "$SS_USER" ];then
+      sudo chown -R $SS_USER $SS_USER ${YH_HOME}/ > /dev/null 2>&1
+      su $SS_USER -c "exec ${JAVA_HOME} ${JAVA_OPTIONS} -jar ${YH_WEBCLIENT_HOME}/yh-webclient.jar $YHWEBCLIENT_ARGS > ${YH_WEBCLIENT_STARTUP_LOG} 2>&1 &"
+      
+      echo "Command: ${JAVA_HOME} ${JAVA_OPTIONS}  -jar  ${YH_WEBCLIENT_HOME}/yh-webclient.jar $YHWEBCLIENT_ARGS > ${YH_WEBCLIENT_STARTUP_LOG}"
+      $0 status
+   else
+      exec ${JAVA_HOME} ${JAVA_OPTIONS} -jar ${YH_WEBCLIENT_HOME}/yh-webclient.jar $YHWEBCLIENT_ARGS > ${YH_WEBCLIENT_STARTUP_LOG} 2>&1 
+   fi
+   ;;
+stop)
+   getyhwebclientstatus
+   if [ $YHWEBCLIENTSTATUS -ne 0 ] ; then
+      echo "YellowHammer-WebClient is already stopped"
+      exit 1
+   fi
+   su $SS_USER -c "kill -9  `pgrep -f "${YH_HOME}"`"
+   $0 status
+   ;;
+
+restart)
+   $0 stop
+   $0 start
+   ;;
+status)
+    getyhwebclientstatus
+    if [ $YHWEBCLIENTSTATUS -eq 0 ] ; then
+		   echo "YellowHammer-WebClient is running on pid=$(pgrep -f "${YH_HOME}")"
+         exit 0
+	   else
+		   echo "YellowHammer-WebClient is stopped."
+         exit 1
+    fi
+
+   ;;
+*)
+   echo "Usage: $0 {start|stop|status|restart}"
+esac
+
+exit 0

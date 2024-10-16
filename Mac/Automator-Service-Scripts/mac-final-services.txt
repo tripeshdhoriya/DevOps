@@ -1,0 +1,139 @@
+-----------------------------------------------
+RC-SERVER
+-----------------------------------------------
+
+property actionList : {"Start", "Stop", "Status"}
+set choice to choose from list actionList with prompt "Choose your action:"
+
+set actionList to choice as string
+
+if actionList is "Start" then
+	set msg to "Starting RedCanary-Server..."
+	tell application "Finder" to if exists "/opt/SigmaStream/RedCanary/RedCanary-Server/server/rcserver.pid" as POSIX file then set msg to "RedCanary Server is Already Running!"
+	display dialog msg
+	if msg = "Starting RedCanary-Server..." then
+		do shell script "exec  nohup /opt/SigmaStream/RedCanary/RedCanary-server/server/rcserver.sh start > /dev/null 2>&1 &"
+		display dialog "RedCanary-Server is Started."
+	end if
+	
+else if actionList is "Stop" then
+	set msg to "RedCanary Server is Already Stopped!"
+	tell application "Finder" to if exists "/opt/SigmaStream/RedCanary/RedCanary-Server/server/rcserver.pid" as POSIX file then set msg to "Stopping RedCanary-Server..."
+	display dialog msg
+	
+	if msg = "Stopping RedCanary-Server..." then
+		do shell script "exec /opt/SigmaStream/RedCanary/RedCanary-Server/server/rcserver.sh stop > /dev/null 2>&1 &"
+		display dialog "RedCanary-Server is Stopped."
+	end if
+else if actionList is "Status" then
+	set msg to "RedCanary Server is Not Running."
+	tell application "Finder" to if exists "/opt/SigmaStream/RedCanary/RedCanary-Server/server/rcserver.pid" as POSIX file then set msg to "RedCanary Server is Running."
+	
+	display dialog msg
+	
+end if
+
+-----------------------------------------------
+RC-AGENT
+-----------------------------------------------
+property actionList : {"Start", "Stop", "Status"}
+set choice to choose from list actionList with prompt "Choose your action:"
+
+set actionList to choice as string
+
+if actionList is "Start" then
+	set msg to "Starting RedCanary-Agent..."
+	tell application "Finder" to if exists "/opt/SigmaStream/RedCanary/RedCanary-Agent/agent/rcagent.pid" as POSIX file then set msg to "RedCanary-Agent is Already Running!"
+	display dialog msg
+	if msg = "Starting RedCanary-Agent..." then
+		do shell script "exec  nohup /opt/SigmaStream/RedCanary/RedCanary-Agent/agent/rcagent.sh start > /dev/null 2>&1 &"
+		display dialog "RedCanary-Agent is Started."
+	end if
+	
+else if actionList is "Stop" then
+	set msg to "RedCanary Server is Already Stopped!"
+	tell application "Finder" to if exists "/opt/SigmaStream/RedCanary/RedCanary-Agent/agent/rcagent.pid" as POSIX file then set msg to "Stopping RedCanary-Agent..."
+	display dialog msg
+	
+	if msg = "Stopping RedCanary-Agent..." then
+		do shell script "exec /opt/SigmaStream/RedCanary/RedCanary-Agent/agent/rcagent.sh stop"
+		display dialog "RedCanary-Agent is Stopped."
+	end if
+	
+else if actionList is "Status" then
+	set msg to "RedCanary Server is Not Running."
+	tell application "Finder" to if exists "/opt/SigmaStream/RedCanary/RedCanary-Agent/agent/rcagent.pid" as POSIX file then set msg to "RedCanary-Agent is Running."
+	
+	display dialog msg
+	
+end if
+
+
+-----------------------------------------------
+YH-SERVER
+-----------------------------------------------
+property actionList : {"Start", "Stop", "Status"}
+set choice to choose from list actionList with prompt "Choose your action:"
+
+set actionList to choice as string
+
+if actionList is "Start" then
+	set msg to "YellowHammer-Server is Not Running,Starting it For You."
+	tell application "Finder" to if exists "/opt/SigmaStream/yhsource/yellowhammer/yellowhammer-base/yhsource.pid" as POSIX file then set msg to "YellowHammer-Server is Already Running!"
+	display dialog msg
+	if msg = "YellowHammer-Server is Not Running,Starting it For You." then
+		do shell script "exec  nohup /opt/SigmaStream/YellowHammer/YellowHammer-Server/YellowHammer-Server/yhsource.sh start > /dev/null 2>&1 &"
+		display dialog "YellowHammer-Server is Started."
+	end if
+	
+else if actionList is "Stop" then
+set msg to "YellowHammer-Server is Already Stopped!"
+	tell application "Finder" to if exists "/opt/SigmaStream/yhsource/yellowhammer/yellowhammer-base/yhsource.pid" as POSIX file then set msg to "YellowHammer-Server is Running."
+	display dialog msg
+
+if msg="YelloHammer-Server is Running."
+	do shell script "exec /opt/SigmaStream/YellowHammer/YellowHammer-Server/YellowHammer-Server/yhsource.sh stop"
+	display dialog "YellowHammer-Server is Stopped."
+
+end if
+else
+
+	set msg to "YellowHammer-Server is Not Running"
+	tell application "Finder" to if exists "/opt/SigmaStream/yhsource/yellowhammer/yellowhammer-base/yhsource.pid" as POSIX file then set msg to "YellowHammer-Server is Running."
+	display dialog msg
+	
+end if
+
+-----------------------------------------------
+YH-WEBCLIENT
+-----------------------------------------------
+property actionList : {"Start", "Stop", "Status"}
+set choice to choose from list actionList with prompt "Choose your action:"
+
+set actionList to choice as string
+
+if actionList is "Start" then
+	set msg to "Starting YellowHammer-WebCliet..."
+	tell application "Finder" to if exists "/opt/SigmaStream/YellowHammer/YellowHammer-Webclient/yellowhammer-webclient/yhwebclient.pid" as POSIX file then set msg to "YellowHammer-Webclient is Already Running!"
+	display dialog msg
+	if msg = "Starting YellowHammer-WebClient..." then
+		do shell script "exec  nohup /opt/SigmaStream/YellowHammer/YellowHammer-Webclient/yhwebclient.sh start > /dev/null 2>&1 &"
+		display dialog "YellowHammer-Webclient is Started."
+	end if
+	
+else if actionList is "Stop" then
+	set msg to "Stopping YellowHammer-WebClient..."
+	tell application "Finder" to if exists "/opt/SigmaStream/YellowHammer/YellowHammer-Webclient/yellowhammer-webclient/yhwebclient.pid" as POSIX file then set msg to "YellowHammer-Webclient is Already Stopped!	."
+	display dialog msg
+if msg="Stopping YellowHammer-WebClient..."
+	do shell script "exec /opt/SigmaStream/YellowHammer/YellowHammer-Webclient/yhwebclient.sh stop"
+	display dialog "YellowHammer-Webclient is Stopped. "
+end if
+
+else if actionList is "Status" then
+	set msg to "YellowHammer-Webclient is Not Running."
+	tell application "Finder" to if exists "/opt/SigmaStream/YellowHammer/YellowHammer-Webclient/yellowhammer-webclient/yhwebclient.pid" as POSIX file then set msg to "YellowHammer-Webclient is Running."
+	display dialog msg
+	
+end if
+

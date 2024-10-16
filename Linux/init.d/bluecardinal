@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+
+# chkconfig: 2345 20 80
+# description: BlueCardinal Server
+
+# Source function library.
+. /etc/init.d/functions
+
+SS_USER=sigmastream
+FD_LIMIT=10000
+BC_HOME=/home/sigmastream/bcserver
+APP=bluecardinal #to use in pgrep
+
+getbluecardinalstatus(){
+   BCSERVERSTATUSSTRING=$(ps ax | grep ${BC_HOME} | grep -v grep)
+    echo $BCSERVERSTATUSSTRING | grep -q ${BC_HOME}
+    BCSERVERSTATUS=$?
+}
+
+
+case "$1" in 
+start)
+   getbluecardinalstatus
+   if [ $BCSERVERSTATUS -eq 0 ]; then
+      echo "BlueCardinal is already running"
+      exit 0
+   fi
+   ulimit -l unlimited
+   ulimit -u 65535
+   ulimit -n "$FD_LIMIT"
+   if [ -n "$SS_USER" ];then 
+      sudo chown -R $SS_USER:$SS_USER $BC_HOME/  > /dev/null 2>&1
+      su $SS_USER -c "exec $BC_HOME/bin/start-jetserver-with-operators.sh 2>&1 &"
+      # sh start-jetserver-with-operators.sh 2>&1 | grep -e "Services have been started." -e  "Root Directory is created!" -e "ERROR" --colour=never &> /dev/null &
+      sleep 3
+      echo "[+] BlueCardinal is started."
+   else
+      exec $BC_HOME/bin/start-jetserver-with-operators.sh 2>&1 &
+   fi
+   ;;
+stop)
+   getbluecardinalstatus
+   if [ $BCSERVERSTATUS -ne 0 ]; then
+      echo "BlueCardinal is already stopped"
+      exit 1
+   fi
+   su $SS_USER -c "kill -9 `ps -ef | grep ${BC_HOME} | grep -v grep | awk '{print $2}'`"
+   echo "[+] BlueCardinal is stopped."
+   ;;
+restart)
+   $0 stop
+   $0 start
+   ;;
+
+generate-keycode|generate-licensekey)
+   echo "[+] Generating application secret token..."
+
+   if [ -f ${BC_HOME}/key-generator-2.1.0.jar ];then
+      echo ""
+      echo "-----------------------------------------------------------------------------------------------"
+      su $SS_USER -c "${BC_HOME}/jre/bin/java -jar ${BC_HOME}/key-generator-2.1.0.jar"
+      echo "-----------------------------------------------------------------------------------------------"
+      echo ""
+   else
+      echo "Can't find keygenerator file in ${BC_HOME}, please contact to support@sigmastream.com"
+      exit 1
+   fi
+   ;;
+
+apply-licensetoken|apply-licensekey)
+echo "[+] Verifying licensekey file [ ok ]"
+
+if [ -f ${BC_HOME}/bcserver-licensekey ];then
+   su $SS_USER -c "cat ${BC_HOME}/bcserver-licensekey >> ${BC_HOME}/config/config.properties"
+   echo "[#] licensekey has been successfully installed in the application, please restart application."
+   # $0 stop
+   # $0 start
+else
+   echo "Please verify bcserver-licensekey is available in $BC_HOME directory."
+   exit 1
+fi
+   ;;
+
+status)
+   getbluecardinalstatus
+   if [ $BCSERVERSTATUS -eq 0 ]; then
+      echo "BlueCardinal is running on pid=$(ps -ef | grep ${BC_HOME} | grep -v grep | awk '{print $2}')"
+      exit 0
+   else
+      echo "BlueCardinal is stopped"
+      exit 1
+   fi
+   ;;
+*)
+   echo "Usage: $0 {start|stop|status|restart}"
+esac
+
+exit 0 

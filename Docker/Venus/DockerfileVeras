@@ -1,0 +1,24 @@
+# Use an official OpenJDK 17 runtime as a parent image
+FROM openjdk:11-jdk-slim
+
+# Set the working directory to /app
+WORKDIR /app/sigmastream/veras
+
+# Copy the JAR file and other necessary files
+COPY webapp-1.0-SNAPSHOT.jar /app/sigmastream/veras
+COPY config-ext.properties /app/sigmastream/veras/
+COPY Glowroot /app/sigmastream/veras/Glowroot/
+COPY application.properties /app/sigmastream/veras/
+COPY keystore.jks /app/sigmastream/veras/
+COPY start-service.sh /app/sigmastream/veras
+
+# Define environment variable for Java options
+ENV JAVA_OPTIONS="-Xms512m -Xmx4g -XX:MetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+FlightRecorder -XX:CompressedClassSpaceSize=256m -Duser.timezone=UTC-XX:+UseStringDeduplication -XX:+UseCompressedOops -javaagent:/app/sigmastream/veras/Glowroot/glowroot.jar"
+
+# Expose the port that your Spring Boot application will run on
+EXPOSE 8081
+EXPOSE 4000
+EXPOSE 8084
+
+# Run the JAR file with specified Java options when the container launches
+CMD java -jar $JAVA_OPTIONS webapp-1.0-SNAPSHOT.jar --spring.config.location=/app/sigmastream/veras/application.properties

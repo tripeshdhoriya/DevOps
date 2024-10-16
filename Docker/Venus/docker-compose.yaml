@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  veras:
+    container_name: veras
+    restart: always
+    networks:
+      - sigmastream
+    image: veras:latest
+    ports:
+      - 8081:8081
+    volumes:
+      - ./VData/config-ext.properties:/app/sigmastream/veras/config-ext.properties
+      - ./VData/webapp-1.0-SNAPSHOT.jar:/app/sigmastream/veras/target/webapp-1.0-SNAPSHOT.jar
+      - ./VData/static:/app/sigmastream/veras/src/main/resources/static
+    deploy:
+      resources:
+        limits:
+          memory: 1024M  

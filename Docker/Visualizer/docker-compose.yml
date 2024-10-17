@@ -1,0 +1,47 @@
+version: "3"
+services:
+  hummingbird_server:
+    container_name: hummingbird_server
+    depends_on:
+      - postgresql
+    image: hummingbird
+    volumes:
+      - ./AppData/log:/home/sigmastream/HummingBird/server/log
+      - ./AppData/config/config-ext.properties:/home/sigmastream/HummingBird/server/jettyhome/work/config-ext.properties
+    ports:
+      - "7443:7443"
+    networks:
+      - sigmastream
+
+  postgresql:
+    container_name: PostgreSQL
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/15/KFSeed_Fresh.sql:/dump/KFSeed_Fresh.sql
+      - ./postgres/15/restore.sh:/docker-entrypoint-initdb.d/restore.sh             
+      - ./postgres/15/data:/var/lib/postgresql/data
+    env_file:
+      - postgres.env
+    networks:
+      - sigmastream
+
+  cassandra:
+    container_name: Cassandra
+    image: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_CLUSTER_NAME=mycluster
+    volumes:
+      - ./cassandra/data:/var/lib/cassandra
+      - ./cassandra/log:/var/log/cassandra
+      - ./cassandra/dump/hummingbird_kf_schema.cql:/cassandra/dump/hummingbird_kf_schema.cql
+      - ./cassandra/dump/setup-cassandra.sh:/docker-entrypoint-initdb.d/setup-cassandra.sh
+
+    networks:
+      - sigmastream
+
+networks:
+  sigmastream:

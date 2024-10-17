@@ -1,0 +1,4 @@
+FROM ubuntu
+WORKDIR /home/sigmastream/HummingBird/server
+COPY . /home/sigmastream/HummingBird/server
+CMD sh ./idempiere-server.sh
